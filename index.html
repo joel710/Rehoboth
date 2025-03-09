@@ -114,7 +114,7 @@
     
         <!-- Menu hamburger pour mobile -->
         <div class="menu-toggle" onclick="toggleMenu()">
-            <img src="img/menu-icon.png" alt="Menu Icon">
+            <img src="img/menu.png" alt="Menu Icon">
         </div>
     
         <nav class="nav-links">
@@ -183,7 +183,7 @@
                 <li>Hair Styling <span>from $30</span></li>
                 <li>Make up <span>from $50</span></li>
                 <li>Cosmetology <span>from $30</span></li>
-                <li>SPA procedures <span>from $40</span></li>
+                
             </ul>
             <a href="#" class="view-all">View all</a>
         </div>
@@ -209,32 +209,37 @@
         </div>
     </section>
 
+
     <!-- produit -->
     <section class="produit-section">
         <!-- Service 1 -->
         <div class="produit-card">
-            <h2 class="produit-title">Professional Care</h2>
+            <div class="icon-background"><i class="fa-solid fa-scissors"></i></div>
+            <h2 class="produit-title">Timeless African Braids</h2>
             <p class="produit-description">
-                Eleifend arcu non lorem justo in tempus purus gravida.
+                African hair braiding is more than just a style; it's a symbol of culture, heritage, and self-expression.
             </p>
         </div>
     
         <!-- Service 2 -->
         <div class="produit-card">
-            <h2 class="produit-title">Premium brands</h2>
+            <div class="icon-background"><i class="fa-solid fa-leaf"></i></div>
+            <h2 class="produit-title">Natural Haircare</h2>
             <p class="produit-description">
-                Eleifend arcu non lorem justo in tempus purus gravida.
+                Using organic oils and treatments, we nourish and protect your hair while enhancing its natural beauty.
             </p>
         </div>
     
         <!-- Service 3 -->
         <div class="produit-card">
-            <h2 class="produit-title">Natural cosmetic</h2>
+            <div class="icon-background"><i class="fa-solid fa-star"></i></div>
+            <h2 class="produit-title">Professional & Stylish</h2>
             <p class="produit-description">
-                Eleifend arcu non lorem justo in tempus purus gravida.
+                From classic cornrows to modern twists, our stylists deliver precision and perfection.
             </p>
         </div>
     </section>
+
 
     <!-- shop -->
     <!-- <section class="shop">
@@ -370,15 +375,85 @@
 
                 
        let images = document.querySelectorAll('.image-circle');
+        let testimonials = [
+            {
+                name: "Michaela Hayden",
+                role: "Happy client",
+                text: "Quis euismod eu eleifend tristique. Rutrum eget turpis semper risus aliquam imperdiet amet..."
+            },
+            {
+                name: "Daniela Smith",
+                role: "Satisfied customer",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor velit et dolor facilisis."
+            },
+            {
+                name: "James Carter",
+                role: "Regular client",
+                text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+            }
+        ];
         let activeIndex = 0;
+        let testimonialText = document.querySelector('.testimonial-text h3');
+        let testimonialRole = document.querySelector('.testimonial-text span');
+        let testimonialMessage = document.querySelector('.testimonial-text p');
 
         function rotateImages() {
-            images[activeIndex].style.background = '#C4A08B';
+            // Réinitialiser toutes les images
+            images.forEach(img => {
+                img.style.transform = 'scale(1)';
+                img.style.boxShadow = 'none';
+            });
+
+            // Appliquer l'effet sur l'image active
+            images[activeIndex].style.transform = 'scale(1.2)';
+            images[activeIndex].style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.3)';
+
+            // Changer le témoignage
+            testimonialText.textContent = testimonials[activeIndex].name;
+            testimonialRole.textContent = testimonials[activeIndex].role;
+            testimonialMessage.textContent = testimonials[activeIndex].text;
+
+            // Passer à l'image suivante
             activeIndex = (activeIndex + 1) % images.length;
-            images[activeIndex].style.background = '#8B5E3B';
         }
 
+        // Démarrer l'animation toutes les 3 secondes
         setInterval(rotateImages, 3000);
+
+        //--------------------
+        document.addEventListener("DOMContentLoaded", function () {
+                let section = document.querySelector(".produit-section");
+
+                function checkScroll() {
+                    let sectionPosition = section.getBoundingClientRect().top;
+                    let screenPosition = window.innerHeight / 1.3;
+
+                    if (sectionPosition < screenPosition) {
+                        section.classList.add("visible");
+                    }
+                }
+
+                window.addEventListener("scroll", checkScroll);
+                checkScroll(); // Vérifie immédiatement si la section est visible au chargement
+            });
+            //--------------------------
+            document.addEventListener("DOMContentLoaded", function () {
+                    let section = document.querySelector(".services-section");
+
+                    function checkScroll() {
+                        let sectionPosition = section.getBoundingClientRect().top;
+                        let screenPosition = window.innerHeight / 1.3;
+
+                        if (sectionPosition < screenPosition) {
+                            section.classList.add("visible");
+                        }
+                    }
+
+                    window.addEventListener("scroll", checkScroll);
+                    checkScroll(); // Vérifie immédiatement si la section est visible au chargement
+                });
+
+
     </script>
 </body>
 

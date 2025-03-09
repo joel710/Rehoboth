@@ -207,52 +207,76 @@ p {
 }
  /* ----------------------- */
         .services-section {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .services-section h2 {
-            color: #800000;
-            margin-bottom: 10px;
-        }
-        .services-section p {
-            max-width: 600px;
-            margin: 0 auto 30px;
-            color: #555;
-        }
-        .services-grid {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-        .service-box {
-            width: 200px;
-            height: 250px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            padding: 10px;
-            color: white;
-            font-weight: bold;
-        }
-        .service-box::after {
-            content: "";
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .service-box div {
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .service-box img {
-            width: 20px;
-        }
+    text-align: center;
+    padding: 50px 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Section visible après scroll */
+.services-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation des cartes */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Ajoute du délai pour un effet en cascade */
+.service-box:nth-child(1) { transition-delay: 0.2s; }
+.service-box:nth-child(2) { transition-delay: 0.4s; }
+.service-box:nth-child(3) { transition-delay: 0.6s; }
+.service-box:nth-child(4) { transition-delay: 0.8s; }
+
+/* Quand la section devient visible */
+.services-section.visible .service-box {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fond sombre en overlay */
+.service-box::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Texte & icônes */
+.service-box div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.service-box img {
+    width: 20px;
+}
+
         .pricing-section {
     display: flex;
     align-items: center;
@@ -338,98 +362,173 @@ p {
         /* ----------- */
         /* testimo */
         .testimonials-section {
-            background: linear-gradient(to bottom, #EAD4C1 50%, white 50%);
-            padding: 50px 0;
-            text-align: center;
-        }
-        .testimonials-section h2 {
-            color: #800000;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        .testimonials-section p {
-            color: #555;
-            margin-bottom: 30px;
-        }
-        
-        .testimonials-container {
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 60%;
-            margin: auto;
-            padding: 30px;
-            border-radius: 8px;
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
-        .quotes {
-            font-size: 70px;
-            color: #800000;
-            position: absolute;
-        }
-        .quotes.left { left: -20px; top: -10px; }
-        .quotes.right { right: -20px; bottom: -10px; }
-        
-        .testimonial-images {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            flex: 1;
-        }
-        .testimonial-images div {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #C4A08B;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .testimonial-text {
-            flex: 3;
-            text-align: left;
-            padding-left: 20px;
-        }
-        .testimonial-text h3 {
-            color: #800000;
-            font-size: 16px;
-        }
-        .testimonial-text span {
-            color: #888;
-            font-size: 14px;
-        }
-        .testimonial-text p {
-            margin-top: 10px;
-            color: #444;
-        }
+    background: linear-gradient(to bottom, #EAD4C1 50%, white 50%);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: #800000;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.testimonials-section p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.testimonials-container {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Guillemets stylisés */
+.quotes {
+    font-size: 90px;
+    color: #800000;
+    position: absolute;
+}
+.quotes.left { left: -20px; top: -10px; }
+.quotes.right { right: -20px; bottom: -10px; }
+
+/* Conteneur des images */
+.testimonial-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+/* Ajout des images de profil */
+.testimonial-images .image-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #C4A08B;
+}
+
+/* Appliquer une image différente à chaque profil */
+.image-circle:first-child {
+    background-image: url('img/ts1.jpg');
+}
+.image-circle:nth-child(2) {
+    background-image: url('img/ts2.jpg');
+}
+.image-circle:nth-child(3) {
+    background-image: url('img/ts3.jpg');
+}
+
+.testimonial-text {
+    flex: 3;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.testimonial-text h3 {
+    color: #800000;
+    font-size: 16px;
+}
+
+.testimonial-text span {
+    color: #888;
+    font-size: 14px;
+}
+
+.testimonial-text p {
+    margin-top: 10px;
+    color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .quotes {
+        font-size: 50px;
+    }
+
+    .testimonial-images {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .testimonial-text {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
 /* produit */
 .produit-section {
-            display: flex;
-            justify-content: space-around;
-            padding: 40px 20px;
-            background-color: #f0e0e0;
-            max-width: 100%;
-            margin: 0 auto;
-        }
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #f8e8d0;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
 
-        .produit-card {
-            text-align: center;
-            max-width: 300px;
-        }
+/* Cartes des services */
+.produit-card {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    /* background: white; */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    opacity: 0; /* Caché au départ pour l'animation */
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
-        .produit-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #000;
-            margin-bottom: 15px;
-        }
+/* Animation au scroll */
+.produit-section.visible .produit-card {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        .produit-description {
-            color: #666;
-            line-height: 1.6;
-        }
+/* Titres */
+.produit-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #800000;
+    margin-bottom: 15px;
+}
+
+/* Texte */
+.produit-description {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Icônes en arrière-plan */
+.icon-background {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: rgba(128, 0, 0, 0.2);
+}
+
 /* shop */
 .shop {
     width: 100%;
@@ -520,17 +619,58 @@ p {
 /* grill ig */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
-    grid-gap: 0; /* Aucun espace entre les images */
-    width: 100%; /* Ajustez la largeur selon vos besoins */
-    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colonnes flexibles */
+    grid-gap: 10px; /* Espacement entre les images */
+    width: 100%;
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centre la grille */
+    padding: 20px;
 }
 
+/* Style des images */
 .image-grid img {
     width: 100%;
-    height: 300px;
-    display: block; /* Supprime l'espace supplémentaire sous les images */
+    height: 250px; /* Hauteur ajustée pour l'équilibre */
+    object-fit: cover; /* Coupe et ajuste les images */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+/* Effet au survol */
+.image-grid img:hover {
+    transform: scale(1.05); /* Zoom léger */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste pour tablettes */
+    }
+    .image-grid img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur mobile */
+    }
+    .image-grid img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 seule colonne sur petits écrans */
+    }
+    .image-grid img {
+        height: 160px;
+    }
+}
+
 
 /* footer */
 .footer {
