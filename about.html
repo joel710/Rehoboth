@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: white;
+        }
+
+        .left-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .left-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .right-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .right-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .logo-container img {
+            width: 100px;
+        }
+
+        .carousel-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="top-bar">🔥 ONLY THIS MONTH 20% DISCOUNT ON ALL SERVICES 🔥</div>
+
+    <header class="header">
+        <div class="left-icons">
+            <img src="img/facebook-icon.png" alt="Facebook">
+            <img src="img/instagram-icon.png" alt="Instagram">
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <img src="img/small-icon.png" alt="Small Icon" width="40">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="right-icons">
+            <img src="img/cart-icon.png" alt="Panier">
+            <img src="img/search-icon.png" alt="Recherche">
+        </div>
+    </header>
+
+    <!-- Grand texte à la place du logo -->
+    <div class="hero-title">
+        <h1>About Us</h1>
+    </div>
+    
+    <!-- Bannière à la place du carrousel -->
+    <div class="banner">
+        <img src="banner.jpg" alt="Beauty Salon Banner">
+    </div>
+
+    <!-- -------------------- -->
+        <section class="text-section">
+            <h2 class="section-title">We can create what you imagine</h2>
+            <div class="text-columns">
+                <div class="column">
+                    <h3 class="column-title">Blandit at maecenas</h3>
+                    <p>
+                        Blandit at maecenas dui sed amet sit enim vitae. Amet purus dictum urna sagittis dignissim.
+                        At fermentum nisl ullamcorper orci. Pellentesque id tempor lacus aliquet tempus vitae nibh habitasse
+                        consectetur.
+                        Augue quis cras blandit habitant neque. Faucibus vestibulum id nisi ligula ultricies et vehicula.
+                    </p>
+                    <p>
+                        Et adipiscing mattis egestas mi placerat duis congue id. Scelerisque...
+                    </p>
+                </div>
+                <div class="column">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Blandit at maecenas dui sed amet sit enim vitae.
+                        Amet purus dictum urna sagittis dignissim. At fermentum nisl ullamcorper orci.
+                    </p>
+                    <p>
+                        Pellentesque id tempor lacus aliquet tempus vitae nibh habitasse consectetur.
+                        Augue quis cras blandit habitant neque. Faucibus vestibulum id nisi ligula ultricies et vehicula....
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- ---------------------- -->
+
+    <!-- -image section -->
+
+    <section class="image-text-section">
+        <div class="content-container">
+            <div class="image-container">
+                <img src="img/your-image.jpg" alt="Blurry Styled Image">
+            </div>
+            <div class="text-container">
+                <h2 class="section-heading">
+                    Styles from the city, <br> service from out of this world
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Blandit at maecenas dui sed amet sit enim vitae.
+                    Amet purus dictum urna sagittis dignissim. At fermentum nisl ullamcorper orci...
+                </p>
+                <a href="#" class="cta-button">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------- -->
+
+    <!-- ----- blog-------- -->
+
+    <section class="blog-section">
+        <h2 class="blog-title">Our Blog</h2>
+        <p class="blog-subtitle">Latest news</p>
+    
+        <div class="blog-container">
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="img/blog1.jpg" alt="Blog Image">
+                    <div class="blog-date">
+                        <span class="date-day">18</span>
+                        <span class="date-month">Feb</span>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">Spa / Treatment</span>
+                    <h3 class="blog-title">Lacus in elementum faucibus odio nisi purus</h3>
+                    <a href="#" class="blog-read-more">Read more →</a>
+                </div>
+            </article>
+    
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="img/blog2.jpg" alt="Blog Image">
+                    <div class="blog-date">
+                        <span class="date-day">31</span>
+                        <span class="date-month">Dec</span>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">Nail care / Treatment</span>
+                    <h3 class="blog-title">Pulvinar dolor leo tortor tincidunt ac aliquet ultricies</h3>
+                    <a href="#" class="blog-read-more">Read more →</a>
+                </div>
+            </article>
+    
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="img/blog3.jpg" alt="Blog Image">
+                    <div class="blog-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">Make up / News</span>
+                    <h3 class="blog-title">Nam pellentesque dui sed element porttitor accumsan</h3>
+                    <a href="#" class="blog-read-more">Read more →</a>
+                </div>
+            </article>
+    
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="img/blog4.jpg" alt="Blog Image">
+                    <div class="blog-date">
+                        <span class="date-day">21</span>
+                        <span class="date-month">Feb</span>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">Cosmetology / Treatment</span>
+                    <h3 class="blog-title">Bibendum eu gravida nulla erat pharetra egestas leo</h3>
+                    <a href="#" class="blog-read-more">Read more →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Lotus" class="logo">
+        </div>
+        <!-- <h1>Beauty Salon</h1> -->
+        <p>Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae
+            arcu suspendisse amet.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="img/fb.png" alt="Facebook"></a>
+            <!-- <a href="#" class="social-icon"><img src="img/twitter-icon.png" alt="Twitter"></a> -->
+            <a href="#" class="social-icon"><img src="img/ig.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="img/m.png" alt="Email"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright Real Estate 2023. Design by Figma.guru</p>
+            <div class="payment-icons">
+                <img src="img/symboles.png" alt="Visa">
+                <img src="img/carte.png" alt="MasterCard">
+                <img src="img/logo-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+        const profileImages = document.querySelectorAll('.profile-image');
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            profileImages[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % profileImages.length;
+            profileImages[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000); // Change l'image toutes les 3 secondes
+    </script>
+    </body>
+    
+    </html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: white;
+        }
+
+        .left-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .left-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .right-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .right-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .logo-container img {
+            width: 100px;
+        }
+
+        .carousel-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="top-bar">🔥 ONLY THIS MONTH 20% DISCOUNT ON ALL SERVICES 🔥</div>
+
+    <header class="header">
+        <div class="left-icons">
+            <img src="img/facebook-icon.png" alt="Facebook">
+            <img src="img/instagram-icon.png" alt="Instagram">
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <img src="img/small-icon.png" alt="Small Icon" width="40">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="right-icons">
+            <img src="img/cart-icon.png" alt="Panier">
+            <img src="img/search-icon.png" alt="Recherche">
+        </div>
+    </header>
+
+    <!-- Grand texte à la place du logo -->
+    <div class="hero-title">
+        <h1>Contact Us</h1>
+    </div>
+
+    <!-- Carte Google Maps à la place de la bannière -->
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.50668286988!2d-74.25986564755007!3d40.69714942279174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5df17edbb%3A0x9b8bc8c2348c62f4!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sfr!2sfr!4v1709834096321!5m2!1sfr!2sfr"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+    <br>
+
+    <br>
+
+
+    <br>
+
+        <!-- ---info contact--- -->
+        <section class="contact-info">
+            <div class="info-box">
+                <div class="icon location-icon"></div>
+                <h2 ><font style="font-size: 34px;">Address</font></h2>
+                <br>
+                <p>19 North Road Piscataway,<br> NJ 08854</p>
+            </div>
+        
+            <div class="info-box">
+                <div class="icon email-icon"></div>
+                <h2><font style="font-size: 34px;">Email</font></h2>
+                <br>
+                <p>exemple@sbcglobal.net</p>
+            </div>
+        
+            <div class="info-box">
+                <div class="icon phone-icon"></div>
+                <h2><font style="font-size: 34px;">Phone</font></h2>
+                <br>
+                <p>(246) 917-5787<br>(979) 353-9935</p>
+            </div>
+        </section>
+
+
+        <!-- ----rdv---- -->
+        <!-- <div class="cbackground">
+            <div class="card-container">
+                <div class="image-box"></div>
+                <div class="form-box">
+                    <h3 class="salon-title">BEAUTY SALON</h3>
+                    <h1 class="main-title">Book appointment</h1>
+                    <p class="subtitle">
+                        Mi senectus ac ullamcorper sollicitudin volutpat sit a velit. Purus scelerisque
+                    </p>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="First name">
+                            <input type="text" placeholder="Last name">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email">
+                            <input type="tel" placeholder="Phone">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-icon">
+                                <input type="date">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="input-icon">
+                                <input type="time">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <select>
+                                <option>Service</option>
+                            </select>
+                        </div>
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+        <br>
+
+        <br>
+
+        <div class="cbackground-container">
+            <div class="appointment-card">
+                <div class="image-section">
+                    <img src="img/formb2.jpg" style=" background: url('img/formb2.jpg') center/cover no-repeat; width: 90%;" alt="">
+                </div>
+                <div class="form-section">
+                    <h3 class="salon-name">BEAUTY SALON</h3>
+                    <h1 class="appointment-title">Book appointment</h1>
+                    <p class="appointment-description">Mi senectus ac ullamcorper sollicitudin volutpat sit a velit. Purus
+                        scelerisque</p>
+                    <form>
+                        <div class="input-row">
+                            <input type="text" placeholder="First name">
+                            <input type="text" placeholder="Last name">
+                        </div>
+                        <div class="input-row">
+                            <input type="email" placeholder="Email">
+                            <input type="tel" placeholder="Phone">
+                        </div>
+                        <div class="input-row">
+                            <div class="input-with-icon">
+                                <input type="date">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="input-with-icon">
+                                <input type="time">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <select>
+                                <option>Service</option>
+                                <option>Service 2</option>
+                                <option>Service 3</option>
+                            </select>
+                        </div>
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <br>
+
+
+
+        <!-- grill ig -->
+        <!-- <div class="image-grid">
+            <img src="img/p1.jpg" alt="Image 1">
+            <img src="img/p2.jpg" alt="Image 2">
+            <img src="img/p3.jpg" alt="Image 3">
+            <img src="img/p4.jpg" alt="Image 4">
+            <img src="img/p5.jpg" alt="Image 5">
+            <img src="img/p6.jpg" alt="Image 6">
+            <img src="img/p7.jpg" alt="Image 7">
+            <img src="img/p8.jpg" alt="Image 8">
+            <img src="img/p9.jpg" alt="Image 9">
+            <img src="img/p10.jpg" alt="Image 10">
+        </div> -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Lotus" class="logo">
+        </div>
+        <!-- <h1>Beauty Salon</h1> -->
+        <p>Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae
+            arcu suspendisse amet.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="img/fb.png" alt="Facebook"></a>
+            <!-- <a href="#" class="social-icon"><img src="img/twitter-icon.png" alt="Twitter"></a> -->
+            <a href="#" class="social-icon"><img src="img/ig.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="img/m.png" alt="Email"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright Rehoboth African Hair Branding 2025. Design by Strive</p>
+            <div class="payment-icons">
+                <img src="img/symboles.png" alt="Visa">
+                <img src="img/carte.png" alt="MasterCard">
+                <img src="img/logo-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+        const profileImages = document.querySelectorAll('.profile-image');
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            profileImages[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % profileImages.length;
+            profileImages[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000); // Change l'image toutes les 3 secondes
+    </script>
+    </body>
+    
+    </html>

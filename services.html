@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: white;
+        }
+
+        .left-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .left-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .right-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .right-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .logo-container img {
+            width: 100px;
+        }
+
+        .carousel-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="top-bar">🔥 ONLY THIS MONTH 20% DISCOUNT ON ALL SERVICES 🔥</div>
+
+    <header class="header">
+        <div class="left-icons">
+            <img src="img/facebook-icon.png" alt="Facebook">
+            <img src="img/instagram-icon.png" alt="Instagram">
+        </div>
+    
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <img src="img/small-icon.png" alt="Small Icon" width="40">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="right-icons">
+            <img src="img/cart-icon.png" alt="Panier">
+            <img src="img/search-icon.png" alt="Recherche">
+        </div>
+    </header>
+    
+    <!-- Grand texte à la place du logo -->
+    <div class="hero-title">
+        <h1>Services</h1>
+    </div>
+    
+    <!-- Bannière à la place du carrousel -->
+    <div class="banner">
+        <img src="img/image2.jpg" alt="Beauty Salon Banner">
+    </div>
+
+    <!-- services -->
+    <section class="services-section">
+        <h2>Elegance comes from being as beautiful inside as outside</h2>
+        <p>Eleifend arcu non lorem justo in tempus purus gravida. Est tortor egestas sed feugiat elementum.</p>
+        <!-- <div class="services-grid">
+            <div class="service-box" style="background-image: url('makeup.jpg');">
+                <div><img src="brush-icon.png" alt="Icon"> make up</div>
+            </div>
+            <div class="service-box" style="background-image: url('hairstyling.jpg');">
+                <div><img src="comb-icon.png" alt="Icon"> hair styling</div>
+            </div>
+            <div class="service-box" style="background-image: url('nailcare.jpg');">
+                <div><img src="nail-icon.png" alt="Icon"> nail care</div>
+            </div>
+            <div class="service-box" style="background-image: url('cosmetology.jpg');">
+                <div><img src="cosmetic-icon.png" alt="Icon"> cosmetology</div>
+            </div>
+        </div> -->
+    </section>
+    
+    <!-- Makeup -->
+    <section class="pricing-section">
+        <div class="pricing-image makeup"></div>
+        <div class="pricing-text">
+            <h2>Treatments and prices</h2>
+            <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
+            <ul class="pricing-list">
+                <li>Nail care <span>from $25</span></li>
+                <li>Hair Styling <span>from $30</span></li>
+                <li>Make up <span>from $50</span></li>
+                <li>Cosmetology <span>from $30</span></li>
+                <li>SPA procedures <span>from $40</span></li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+        </div>
+    </section>
+    
+    <!-- Hair -->
+    <section class="pricing-section">
+        <div class="pricing-text">
+            <h2>Treatments and prices</h2>
+            <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
+            <ul class="pricing-list">
+                <li>Nail care <span>from $25</span></li>
+                <li>Hair Styling <span>from $30</span></li>
+                <li>Make up <span>from $50</span></li>
+                <li>Cosmetology <span>from $30</span></li>
+                <li>SPA procedures <span>from $40</span></li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+        </div>
+        <div class="pricing-image hair"></div>
+    </section>
+    
+    <!-- Nail -->
+    <section class="pricing-section">
+        <div class="pricing-image nail"></div>
+        <div class="pricing-text">
+            <h2>Treatments and prices</h2>
+            <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
+            <ul class="pricing-list">
+                <li>Nail care <span>from $25</span></li>
+                <li>Hair Styling <span>from $30</span></li>
+                <li>Make up <span>from $50</span></li>
+                <li>Cosmetology <span>from $30</span></li>
+                <li>SPA procedures <span>from $40</span></li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+        </div>
+    </section>
+    
+    <!-- Cosmetology -->
+    <section class="pricing-section">
+        <div class="pricing-text">
+            <h2>Treatments and prices</h2>
+            <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
+            <ul class="pricing-list">
+                <li>Nail care <span>from $25</span></li>
+                <li>Hair Styling <span>from $30</span></li>
+                <li>Make up <span>from $50</span></li>
+                <li>Cosmetology <span>from $30</span></li>
+                <li>SPA procedures <span>from $40</span></li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
+        </div>
+        <div class="pricing-image cosmetology"></div>
+    </section>
+
+
+    <!-- formulaire -->
+
+    <div class="cbackground-container">
+        <div class="appointment-card">
+            <div class="image-section">
+                <img src="img/formb2.jpg" style=" background: url('img/formb2.jpg') center/cover no-repeat; width: 90%;"
+                    alt="">
+            </div>
+            <div class="form-section">
+                <h3 class="salon-name">BEAUTY SALON</h3>
+                <h1 class="appointment-title">Book appointment</h1>
+                <p class="appointment-description">Mi senectus ac ullamcorper sollicitudin volutpat sit a velit. Purus
+                    scelerisque</p>
+                <form>
+                    <div class="input-row">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <div class="input-row">
+                        <input type="email" placeholder="Email">
+                        <input type="tel" placeholder="Phone">
+                    </div>
+                    <div class="input-row">
+                        <div class="input-with-icon">
+                            <input type="date">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="input-with-icon">
+                            <input type="time">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <select>
+                            <option>Service</option>
+                            <option>Service 2</option>
+                            <option>Service 3</option>
+                        </select>
+                    </div>
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Lotus" class="logo">
+        </div>
+        <!-- <h1>Beauty Salon</h1> -->
+        <p>Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae
+            arcu suspendisse amet.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="img/fb.png" alt="Facebook"></a>
+            <!-- <a href="#" class="social-icon"><img src="img/twitter-icon.png" alt="Twitter"></a> -->
+            <a href="#" class="social-icon"><img src="img/ig.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="img/m.png" alt="Email"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright Real Estate 2023. Design by Figma.guru</p>
+            <div class="payment-icons">
+                <img src="img/symboles.png" alt="Visa">
+                <img src="img/carte.png" alt="MasterCard">
+                <img src="img/logo-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+        const profileImages = document.querySelectorAll('.profile-image');
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            profileImages[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % profileImages.length;
+            profileImages[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000); // Change l'image toutes les 3 secondes
+    </script>
+    </body>
+    
+    </html>
