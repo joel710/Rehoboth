@@ -288,19 +288,19 @@ p {
 
 /* Assignation des images aux services */
 .pricing-image.makeup {
-    background: url('img/makeup.jpg') no-repeat center center/cover;
+    background: url('img/tt1.png') no-repeat center center/cover;
 }
 
 .pricing-image.hair {
-    background: url('img/hair.jpg') no-repeat center center/cover;
+    background: url('img/tt2.png') no-repeat center center/cover;
 }
 
 .pricing-image.nail {
-    background: url('img/nail.jpg') no-repeat center center/cover;
+    background: url('img/tt3.png') no-repeat center center/cover;
 }
 
 .pricing-image.cosmetology {
-    background: url('img/cosmetology.jpg') no-repeat center center/cover;
+    background: url('img/tt4.png') no-repeat center center/cover;
 }
 
 .pricing-image {
@@ -732,67 +732,67 @@ p {
 /* formulaire */
 
 /* Conteneur principal centré */
-.container {
+/* .container {
     width: 90%;
     max-width: 900px;
-    margin: 0 auto; /* Centre horizontalement */
+    margin: 0 auto; 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Centre verticalement sur toute la page */
-}
+    min-height: 100vh; 
+} */
 
 /* Carte du formulaire */
-.form-card {
+/* .form-card {
     display: flex;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* Évite le dépassement */
-}
+    max-width: 100%; 
+} */
 
 /* Section image */
-.image-section {
+/*.image-section {
     flex: 1;
     background: url('img/formb2.jpg') center/cover no-repeat;
     filter: blur(10px);
-    min-height: 300px; /* Empêche la réduction extrême */
-}
+    min-height: 300px;  Empêche la réduction extrême 
+}*/
 
 /* Section formulaire */
-.form-section {
+/* .form-section {
     flex: 1.5;
     padding: 30px;
-}
+} */
 
 /* Titres */
-.salon-title {
+/* .salon-title {
     color: #b00000;
     font-size: 12px;
     font-weight: bold;
-}
+} */
 
-.form-title {
+/* .form-title {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
-}
+} */
 
-.form-description {
+/* .form-description {
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
-}
+} */
 
 /* Champs de saisie */
-.input-group {
+/* .input-group {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
-}
+} */
 
-.input-box {
+/* .input-box {
     flex: 1;
 }
 
@@ -807,10 +807,10 @@ input, select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+} */
 
 /* Bouton de soumission */
-.submit-btn {
+/* .submit-btn {
     width: 100%;
     background-color: #7c0a02;
     color: white;
@@ -823,13 +823,13 @@ input, select {
 
 .submit-btn:hover {
     background-color: #590601;
-}
+} */
 
 /* Adaptation mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
-        min-height: auto; /* Ajuste pour mobile */
-        padding: 20px; /* Ajoute un peu d'espace */
+        min-height: auto; 
+        padding: 20px; 
     }
 
     .form-card {
@@ -843,7 +843,7 @@ input, select {
     .form-section {
         padding: 20px;
     }
-}
+} */
 
 
 /* Grand texte stylisé */
@@ -1153,7 +1153,7 @@ p {
 /* -----rdv 2----------- */
 
    /* Conteneur principal */
-.cbackground {
+/* .cbackground {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1170,22 +1170,22 @@ p {
 }
 
 /* Image */
-.image-boxs {
+/* .image-boxs {
     width: 40%;
     background: url('img/formb2.jpg') center/cover no-repeat;
-}
+} */
 
 /* Formulaire */
-.form-box {
+/* .form-box {
     width: 80%;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 /* Titres */
-.salon-title {
+/* .salon-title {
     color: #7c0a02;
     font-size: 14px;
     font-weight: bold;
@@ -1201,10 +1201,10 @@ p {
     font-size: 14px;
     color: #555;
     margin-bottom: 20px;
-}
+}  */
 
 /* Formulaire */
-form {
+/* form {
     display: flex;
     flex-direction: column;
 }
@@ -1223,7 +1223,7 @@ form {
 }
 
 /* Ajout des icônes */
-.input-icon {
+/* .input-icon {
     position: relative;
     width: 100%;
 }
@@ -1245,7 +1245,7 @@ form {
 }
 
 /* Bouton */
-button {
+/* button {
     background: #7c0a02;
     color: #fff;
     border: none;
@@ -1258,10 +1258,10 @@ button {
 
 button:hover {
     background: #5a0700;
-}
+}  */
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .card-container {
         flex-direction: column;
         width: 90%;
@@ -1273,23 +1273,38 @@ button:hover {
     .form-box {
         width: 100%;
     }
-}
+} */ */
 
 /* ----test section--- */
 .cbackground-container {
+            
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
+            min-height: 100vh; /* Assure le centrage même si le contenu dépasse */
+            padding: 20px; /* Ajoute un peu d'espace autour sur les petits écrans */
         }
         .appointment-card {
             display: flex;
-            background: #ffffff;
-            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-            border-radius: 10px;
-            overflow: hidden;
-            max-width: 900px;
-            width: 100%;
+                background: #ffffff;
+                border-radius: 10px;
+                overflow: hidden;
+                max-width: 900px;
+                width: 100%;
+                animation: fadeIn 1s ease-in-out;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                position: relative;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .image-section {
             width: 40%;
@@ -1298,6 +1313,17 @@ button:hover {
         .form-section {
             width: 60%;
             padding: 30px;
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
         .salon-name {
             color: #a52a2a;
@@ -1353,6 +1379,7 @@ button:hover {
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
+            transition: background 0.3s ease-in-out;
         }
         button:hover {
             background: #8b1e1e;
