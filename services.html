@@ -124,6 +124,11 @@
         <img src="img/image2.jpg" alt="Beauty Salon Banner">
     </div>
 
+    <!-- Grand texte à la place du logo -->
+    <div class="hero-title">
+        <h1>Services</h1>
+    </div>
+
     <!-- services -->
     <section class="services-section">
         <h2>Elegance comes from being as beautiful inside as outside</h2>
@@ -151,11 +156,10 @@
             <h2>Treatments and prices</h2>
             <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
             <ul class="pricing-list">
-                <li>Nail care <span>from $25</span></li>
+                
                 <li>Hair Styling <span>from $30</span></li>
-                <li>Make up <span>from $50</span></li>
-                <li>Cosmetology <span>from $30</span></li>
-                <li>SPA procedures <span>from $40</span></li>
+                
+                
             </ul>
             <a href="#" class="view-all">View all</a>
         </div>
@@ -167,11 +171,11 @@
             <h2>Treatments and prices</h2>
             <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
             <ul class="pricing-list">
-                <li>Nail care <span>from $25</span></li>
+                
                 <li>Hair Styling <span>from $30</span></li>
                 <li>Make up <span>from $50</span></li>
-                <li>Cosmetology <span>from $30</span></li>
-                <li>SPA procedures <span>from $40</span></li>
+                
+                
             </ul>
             <a href="#" class="view-all">View all</a>
         </div>
@@ -185,11 +189,10 @@
             <h2>Treatments and prices</h2>
             <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
             <ul class="pricing-list">
-                <li>Nail care <span>from $25</span></li>
+                
                 <li>Hair Styling <span>from $30</span></li>
-                <li>Make up <span>from $50</span></li>
-                <li>Cosmetology <span>from $30</span></li>
-                <li>SPA procedures <span>from $40</span></li>
+                
+                
             </ul>
             <a href="#" class="view-all">View all</a>
         </div>
@@ -201,56 +204,112 @@
             <h2>Treatments and prices</h2>
             <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
             <ul class="pricing-list">
-                <li>Nail care <span>from $25</span></li>
+                
                 <li>Hair Styling <span>from $30</span></li>
-                <li>Make up <span>from $50</span></li>
-                <li>Cosmetology <span>from $30</span></li>
-                <li>SPA procedures <span>from $40</span></li>
+                
             </ul>
-            <a href="#" class="view-all">View all</a>
+            <a href="#" class="view-all" onclick="toggleSection(event)">View all</a>
         </div>
         <div class="pricing-image cosmetology"></div>
     </section>
+    <!-- ############################ -->
+
+    <section class="hairstyle-categories hidden">
+        <div class="category">
+            <h2>BRAIDS</h2>
+            <ul>
+                
+                <li>Box Braids</li>
+                <li>Micros</li>
+                <li>Tree Braids</li>
+                <li>Individual Tree Braids</li>
+                <li>Crotchet Braids</li>
+                
+                
+            </ul>
+        </div>
+    
+        <div class="category">
+            <h2>TWISTS</h2>
+            <ul>
+                <li>Senegalese Twists</li>
+                
+                <li>Kinky Twists</li>
+        
+                <li>Soft Twists</li>
+                <li>Two Strand Twists</li>
+                <li>Micro Twists</li>
+                
+            </ul>
+        </div>
+    
+        <div class="category">
+            <h2>WEAVES</h2>
+            <ul>
+                <li>Full Sew In</li>
+                <li>Half Sew In</li>
+                <li>Quick Weave</li>
+                <li>Weave Trim</li>
+                <li>Row Of Tracks</li>
+            </ul>
+        </div>
+    
+        <div class="category">
+            <h2>DREADLOCS</h2>
+            <ul>
+                <li >Starter Locs</li>
+                <li >Sister Locs</li>
+                <li >Loc Extensions</li>
+                <li >Loc Maintenance</li>
+                <li >Loc Styling</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>KIDS</h2>
+            <ul>
+                <li>Braids</li>
+                <li>Twists</li>
+                
+            </ul>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- ############################ -->
 
 
     <!-- formulaire -->
 
     <div class="cbackground-container">
         <div class="appointment-card">
-            <div class="image-section">
-                <img src="img/formb2.jpg" style=" background: url('img/formb2.jpg') center/cover no-repeat; width: 90%;"
-                    alt="">
-            </div>
+            <div class="image-section"></div>
             <div class="form-section">
-                <h3 class="salon-name">BEAUTY SALON</h3>
+                <h3 class="salon-name">Rehoboth</h3>
                 <h1 class="appointment-title">Book appointment</h1>
                 <p class="appointment-description">Mi senectus ac ullamcorper sollicitudin volutpat sit a velit. Purus
                     scelerisque</p>
-                <form>
+                <form id="appointmentForm">
                     <div class="input-row">
-                        <input type="text" placeholder="First name">
-                        <input type="text" placeholder="Last name">
+                        <input type="text" name="first_name" placeholder="First name" required>
+                        <input type="text" name="last_name" placeholder="Last name" required>
                     </div>
                     <div class="input-row">
-                        <input type="email" placeholder="Email">
-                        <input type="tel" placeholder="Phone">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="phone" placeholder="Phone" required>
                     </div>
                     <div class="input-row">
                         <div class="input-with-icon">
-                            <input type="date">
+                            <input type="date" name="date" required>
                             <i class="fas fa-calendar-alt"></i>
                         </div>
                         <div class="input-with-icon">
-                            <input type="time">
+                            <input type="time" name="time" required>
                             <i class="fas fa-clock"></i>
                         </div>
                     </div>
                     <div class="input-row">
-                        <select>
-                            <option>Service</option>
-                            <option>Service 2</option>
-                            <option>Service 3</option>
-                        </select>
+                        <textarea name="message" placeholder="Enter your message..." rows="4" required></textarea>
                     </div>
                     <button type="submit">Send message</button>
                 </form>
@@ -308,6 +367,33 @@
         }
 
         setInterval(showNextImage, 3000); // Change l'image toutes les 3 secondes
+        <!-- ################################ -->
+        function toggleSection(event) {
+                event.preventDefault();
+                document.querySelector('.hairstyle-categories').classList.toggle('hidden');
+            }
+
+        //------------------------------
+        document.getElementById('appointmentForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                let formData = new FormData(this);
+
+                fetch('C:\wamp64\www\sendM\send_mail.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('responseMessage').innerHTML = data;
+                        document.getElementById('appointmentForm').reset();
+                    })
+                    .catch(error => {
+                        document.getElementById('responseMessage').innerHTML = "Erreur lors de l'envoi. Essayez encore.";
+                    });
+            });
+
+
     </script>
     </body>
     
