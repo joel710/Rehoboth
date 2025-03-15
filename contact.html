@@ -122,7 +122,7 @@
     <!-- Carte Google Maps à la place de la bannière -->
     <div class="map-container">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.50668286988!2d-74.25986564755007!3d40.69714942279174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5df17edbb%3A0x9b8bc8c2348c62f4!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sfr!2sfr!4v1709834096321!5m2!1sfr!2sfr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.863340002073!2d-80.79712821634875!3d35.259655482710144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541e34bf1f062b%3A0x835042820acc8de5!2s4409%20N%20Tryon%20St%2C%20Charlotte%2C%20NC%2028213%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2stg!4v1742046038216!5m2!1sfr!2stg" >
             width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
     </div>
@@ -139,21 +139,21 @@
                 <div class="icon location-icon"></div>
                 <h2 ><font style="font-size: 34px;">Address</font></h2>
                 <br>
-                <p>19 North Road Piscataway,<br> NJ 08854</p>
+                <p>4409 North Tryon St.Suite F</p>
             </div>
         
             <div class="info-box">
                 <div class="icon email-icon"></div>
                 <h2><font style="font-size: 34px;">Email</font></h2>
                 <br>
-                <p>exemple@sbcglobal.net</p>
+                <p>chantalaguem@gmail.com</p>
             </div>
         
             <div class="info-box">
                 <div class="icon phone-icon"></div>
                 <h2><font style="font-size: 34px;">Phone</font></h2>
                 <br>
-                <p>(246) 917-5787<br>(979) 353-9935</p>
+                <p>980-316-1993<br>336-327-5841</p>
             </div>
         </section>
 
@@ -203,42 +203,39 @@
 
         <div class="cbackground-container">
             <div class="appointment-card">
-                <div class="image-section">
-                    
-                </div>
+                <div class="image-section"></div>
                 <div class="form-section">
-                    <h3 class="salon-name">BEAUTY SALON</h3>
-                    <h1 class="appointment-title">Book appointment</h1>
+                    <h3 class="salon-name">Rehoboth</h3>
+                    <h1 class="appointment-title"><font style="font-size: 34px;">Book appointment</font></h1>
                     <p class="appointment-description">Mi senectus ac ullamcorper sollicitudin volutpat sit a velit. Purus
                         scelerisque</p>
-                    <form>
+                    <form id="appointmentForm" action="https://formsubmit.co/chantalaguem@gmail.com" method="POST" target="_blank">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="success.html">
                         <div class="input-row">
-                            <input type="text" placeholder="First name">
-                            <input type="text" placeholder="Last name">
+                            <input type="text" name="first_name" placeholder="First name" required>
+                            <input type="text" name="last_name" placeholder="Last name" required>
                         </div>
                         <div class="input-row">
-                            <input type="email" placeholder="Email">
-                            <input type="tel" placeholder="Phone">
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="tel" name="phone" placeholder="Phone" required>
                         </div>
                         <div class="input-row">
                             <div class="input-with-icon">
-                                <input type="date">
+                                <input type="date" name="date" required>
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
                             <div class="input-with-icon">
-                                <input type="time">
+                                <input type="time" name="time" required>
                                 <i class="fas fa-clock"></i>
                             </div>
                         </div>
                         <div class="input-row">
-                            <select>
-                                <option>Service</option>
-                                <option>Service 2</option>
-                                <option>Service 3</option>
-                            </select>
+                            <textarea name="message" placeholder="Enter your message..." rows="4" required></textarea>
                         </div>
                         <button type="submit">Send message</button>
                     </form>
+        
                 </div>
             </div>
         </div>
@@ -258,7 +255,7 @@
             <img src="img/p5.jpg" alt="Image 5">
             <img src="img/p6.jpg" alt="Image 6">
             <img src="img/p7.jpg" alt="Image 7">
-            <img src="img/p8.jpg" alt="Image 8">
+            <img src="img/p8p.jpg" alt="Image 8">
             <img src="img/p9.jpg" alt="Image 9">
             <img src="img/p10.jpg" alt="Image 10">
         </div> 
@@ -270,8 +267,7 @@
             <img src="img/logo.png" alt="Logo Lotus" class="logo">
         </div>
         <!-- <h1>Beauty Salon</h1> -->
-        <p>Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae
-            arcu suspendisse amet.</p>
+        <p>Make your appointment now and get ready for a stunning hair makeover at Rehoboth African Hair Braiding.</p>
         <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=61559077173775" class="social-icon"><img src="img/fb.png" alt="Facebook"></a>
             <!-- <a href="#" class="social-icon"><img src="img/twitter-icon.png" alt="Twitter"></a> -->

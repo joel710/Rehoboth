@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css" >
     <link rel="stylesheet" href="chemin/vers/votre/css/fontawesome.css">
     <!-- <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -93,6 +94,83 @@
             object-fit: cover;
         }
     </style> -->
+    <style>
+    .special-container {
+        text-align: center;
+        padding: 40px;
+        background-color: #fff;
+    }
+
+    .special-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .special-title::after {
+        content: "✿";
+        display: block;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .special-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .special-text {
+        flex: 1;
+        text-align: left;
+        font-size: 16px;
+        color: #800000;;
+    }
+
+    .special-carousel {
+        width: 200px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+        
+    }
+
+    .special-carousel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .special-list {
+        flex: 1;
+        text-align: left;
+        list-style: none;
+        padding: 0;
+    }
+
+    .special-list li {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #a0522d;
+    }
+
+    @media (max-width: 768px) {
+        .special-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .special-text, .special-list {
+            text-align: center;
+        }
+    }
+
+    </style>
 </head>
 
 <body>
@@ -153,27 +231,28 @@
 
     <!-- services -->
     <section class="services-section">
-        <h2>Elegance comes from being as beautiful inside as outside</h2>
-        <p>Eleifend arcu non lorem justo in tempus purus gravida. Est tortor egestas sed feugiat elementum.</p>
+        <h2>Welcome to Rehoboth African Hair Braiding</h2>
+        
+        <p>Elegance comes from being as beautiful inside as outside</p>
         <div class="services-grid">
             <div class="service-box" style="background-image: url('img/mak2.jpg');">
-                <div><img src="brush-icon.png" alt="Icon"> make up</div>
+                <div>Braiding Styles</div>
             </div>
             <div class="service-box" style="background-image: url('img/mak3.jpg');">
-                <div><img src="comb-icon.png" alt="Icon"> hair styling</div>
+                <div>Hair Care & Treatment</div>
             </div>
             <div class="service-box" style="background-image: url('img/nails.jpg');">
-                <div><img src="nail-icon.png" alt="Icon"> nail care</div>
+                <div>Hair Extensions</div>
             </div>
             <div class="service-box" style="background-image: url('img/cream.jpg');">
-                <div><img src="cosmetic-icon.png" alt="Icon"> cosmetology</div>
+                <div>Protective Hairstyles</div>
             </div>
         </div>
     </section>
 
     <!-- Pricing -->
 
-    <section class="pricing-section">
+    <!-- <section class="pricing-section">
         <div class="pricing-image"></div>
         <div class="pricing-text">
             <h2>Treatments and prices</h2>
@@ -187,12 +266,35 @@
             </ul>
             <a href="#" class="view-all">View all</a>
         </div>
-    </section>
-
+    </section> -->
+        <div class="special-container">
+            <h2 class="special-title">We Specialize In</h2>
+            <div class="special-content">
+                <div class="special-text">
+                    <h3>Rehoboth - 1 stop shop for all your hair style needs</h3>
+                    <p>
+                        Rehoboth African Hair Braiding offers a wide range of braiding styles and services, including Corn-Rows, Micros,
+                        Kinky-Twists, Locks, Tree Braids, Silky Twists, Pixie Braids, Flat Twists, Goddess Braids, as well as Single,
+                        Individual, or Box Braids and more.
+                    </p>
+                </div>
+                <div class="special-carousel">
+                    <img id="special-image" src="img/img1.jpg" alt="Hair Style">
+                </div>
+                <ul class="special-list">
+                    <li>Braids</li>
+                    <li>Dreads</li>
+                    <li>Twists</li>
+                    <li>Braid maintenance services including washing and braids removal</li>
+                    <li>Wide selection of Hair & Styles</li>
+                    <li>All Natural Brazilian hair is also available.</li>
+                </ul>
+            </div>
+        </div>
     <!-- testimonials -->
     <section class="testimonials-section">
         <h2>Testimonials</h2>
-        <p>Eliefend arcu non lorem justo in tempus purus gravida tortor egestas sed feugiat elementum</p>
+        <p>At Rehoboth African Hair Braiding, we take pride in our commitment to customer satisfaction</p>
     
         <div class="testimonials-container">
             <span class="quotes left">&#8220;</span>
@@ -202,8 +304,9 @@
                 <div class="image-circle"></div>
             </div>
             <div class="testimonial-text">
-                <h3>Michaela Hayden <span>Happy client</span></h3>
-                <p>Quis euismod eu eleifend tristique. Rutrum eget turpis semper risus aliquam imperdiet amet...</p>
+                <h3>Lisa R <span>Happy client</span></h3>
+                <p>I went to Rehoboth African Hair Braiding salon for the first time and I was blown away by their work! My braids were
+                impeccable and lasted for weeks. I highly recommend this salon to all my friends!</p>
             </div>
             <span class="quotes right">&#8221;</span>
         </div>
@@ -258,27 +361,28 @@
         <!-- Service 1 -->
         <div class="produit-card">
             <div class="icon-background"><i class="fa-solid fa-scissors"></i></div>
-            <h2 class="produit-title">Timeless African Braids</h2>
+            <h2 class="produit-title">Superior Quality</h2>
             <p class="produit-description">
-                African hair braiding is more than just a style; it's a symbol of culture, heritage, and self-expression.
+                At Aabies Hair Braiding, we provide only superior quality hair styles and we only use top of the line hair products.
             </p>
         </div>
     
         <!-- Service 2 -->
         <div class="produit-card">
             <div class="icon-background"><i class="fa-solid fa-leaf"></i></div>
-            <h2 class="produit-title">Natural Haircare</h2>
+            <h2 class="produit-title">Customer Satisfaction</h2>
             <p class="produit-description">
-                Using organic oils and treatments, we nourish and protect your hair while enhancing its natural beauty.
+                The creative environment at Aabies Hair Braiding, works hand in hand with the client ensuring you receive a guaranteed
+                satisfaction.
             </p>
         </div>
     
         <!-- Service 3 -->
         <div class="produit-card">
             <div class="icon-background"><i class="fa-solid fa-star"></i></div>
-            <h2 class="produit-title">Professional & Stylish</h2>
+            <h2 class="produit-title">Skilled Hair Braiders</h2>
             <p class="produit-description">
-                From classic cornrows to modern twists, our stylists deliver precision and perfection.
+                We have more than 50 highly skilled hair braiders on aboard with us to give you your next perfect hair style.
             </p>
         </div>
     </section>
@@ -349,8 +453,7 @@
             <img src="img/logo.png" alt="Logo Lotus" class="logo">
         </div>
         <!-- <h1>Beauty Salon</h1> -->
-        <p>Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae
-            arcu suspendisse amet.</p>
+        <p>Discover your new look at Rehoboth African Hair Braiding - book your appointment today!</p>
         <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=61559077173775" class="social-icon"><img src="img/fb.png" alt="Facebook"></a>
             <!-- <a href="#" class="social-icon"><img src="img/twitter-icon.png" alt="Twitter"></a> -->
@@ -422,17 +525,17 @@
             {
                 name: "Michaela Hayden",
                 role: "Happy client",
-                text: "Quis euismod eu eleifend tristique. Rutrum eget turpis semper risus aliquam imperdiet amet..."
+                text: "I went to Rehoboth African Hair Braiding salon for the first time and I was blown away by their work! My braids were impeccable and lasted for weeks. I highly recommend this salon to all my friends!"
             },
             {
                 name: "Daniela Smith",
                 role: "Satisfied customer",
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor velit et dolor facilisis."
+                text: "Rehoboth African Hair Braiding salon turned my hair into a true work of art. The hairstylists are incredibly talented and attentive. I can't get enough of their services!"
             },
             {
                 name: "James Carter",
                 role: "Regular client",
-                text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+                text: "The braids I got at Rehoboth African Hair Braiding salon received so many compliments! The work is so neat and professional. I feel beautiful and confident every time I walk out of this salon."
             }
         ];
         let activeIndex = 0;
@@ -496,7 +599,21 @@
                     checkScroll(); // Vérifie immédiatement si la section est visible au chargement
                 });
 
+            //--------------------------------
+             const images2 = ["img/img1.jpg", "img/img2.jpg", "img/img3.jpg", "img/img4.jpg"];
+                let index = 0;
+                const imageElement = document.getElementById("special-image");
 
+                function changeImage() {
+                    index = (index + 1) % images2.length;
+                    imageElement.style.opacity = "0";
+                    setTimeout(() => {
+                        imageElement.src = images2[index];
+                        imageElement.style.opacity = "1";
+                    }, 500);
+                }
+
+                setInterval(changeImage, 3000);
     </script>
 </body>
 

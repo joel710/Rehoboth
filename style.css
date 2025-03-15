@@ -288,19 +288,19 @@ p {
 
 /* Assignation des images aux services */
 .pricing-image.makeup {
-    background: url('img/tt1.png') no-repeat center center/cover;
+    background: url('img/micros_promo.jpg') no-repeat center center/cover;
 }
 
 .pricing-image.hair {
-    background: url('img/tt2.png') no-repeat center center/cover;
+    background: url('img/sew_in_promo.jpg') no-repeat center center/cover;
 }
 
 .pricing-image.nail {
-    background: url('img/tt3.png') no-repeat center center/cover;
+    background: url('img/kinky_twists_promo.jpg') no-repeat center center/cover;
 }
 
 .pricing-image.cosmetology {
-    background: url('img/tt4.png') no-repeat center center/cover;
+    background: url('img/Twists_promo.jpg') no-repeat center center/cover;
 }
 
 .pricing-image {
@@ -491,8 +491,8 @@ p {
     max-width: 300px;
     padding: 20px;
     /* background: white; */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    
     position: relative;
     opacity: 0; /* Caché au départ pour l'animation */
     transform: translateY(50px);
@@ -536,7 +536,7 @@ p {
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .shop-header {
@@ -1309,7 +1309,7 @@ button:hover {
 
 .image-section {
     width: 40%;
-    background: url('img/formb2.jpg') no-repeat center center/cover;
+    background: url('img/forgmb1.jpg') no-repeat center center/cover;
 }
 
 .form-section {

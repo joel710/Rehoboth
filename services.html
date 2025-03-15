@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="En">
 
 <head>
     <meta charset="UTF-8">
@@ -153,31 +153,32 @@
     <section class="pricing-section">
         <div class="pricing-image makeup"></div>
         <div class="pricing-text">
-            <h2>Treatments and prices</h2>
-            <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
+            <h2>MICROS</h2>
+            
             <ul class="pricing-list">
                 
-                <li>Hair Styling <span>from $30</span></li>
+                <li>Hair Styling <span>from $120 & Up</span></li>
                 
                 
             </ul>
-            <a href="#" class="view-all">View all</a>
+            <!-- <a href="#" class="view-all">View all</a> -->
         </div>
     </section>
     
     <!-- Hair -->
     <section class="pricing-section">
         <div class="pricing-text">
-            <h2>Treatments and prices</h2>
-            <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
+            <h2>SEW IN</h2>
+            
+        
             <ul class="pricing-list">
                 
-                <li>Hair Styling <span>from $30</span></li>
-                <li>Make up <span>from $50</span></li>
+                <li>Hair Styling <span>from $90 & Up</span></li>
+                
                 
                 
             </ul>
-            <a href="#" class="view-all">View all</a>
+            <!-- <a href="#" class="view-all">View all</a> -->
         </div>
         <div class="pricing-image hair"></div>
     </section>
@@ -186,26 +187,27 @@
     <section class="pricing-section">
         <div class="pricing-image nail"></div>
         <div class="pricing-text">
-            <h2>Treatments and prices</h2>
-            <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
+            <h2>KINKY TWISTS</h2>
+            
             <ul class="pricing-list">
                 
-                <li>Hair Styling <span>from $30</span></li>
+                <li>Hair Styling <span>from $130 & Up</span></li>
                 
                 
             </ul>
-            <a href="#" class="view-all">View all</a>
+            <!-- <a href="#" class="view-all">View all</a> -->
         </div>
     </section>
     
     <!-- Cosmetology -->
     <section class="pricing-section">
         <div class="pricing-text">
-            <h2>Treatments and prices</h2>
-            <p>Velit in dui dictum arcu felis tempor in feugiat in mauris...</p>
+            <h2>CROCHET</h2>
+            
             <ul class="pricing-list">
                 
-                <li>Hair Styling <span>from $30</span></li>
+                <li>Hair Styling <span>from $90 & Up</span></li>
+                
                 
             </ul>
             <a href="#" class="view-all" onclick="toggleSection(event)">View all</a>
@@ -286,10 +288,12 @@
             <div class="image-section"></div>
             <div class="form-section">
                 <h3 class="salon-name">Rehoboth</h3>
-                <h1 class="appointment-title">Book appointment</h1>
+                <h1 class="appointment-title"><font style="font-size: 34px;">Book appointment</font></h1>
                 <p class="appointment-description">Mi senectus ac ullamcorper sollicitudin volutpat sit a velit. Purus
                     scelerisque</p>
-                <form id="appointmentForm">
+                <form id="appointmentForm" action="https://formsubmit.co/chantalaguem@gmail.com" method="POST" target="_blank">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="success.html">
                     <div class="input-row">
                         <input type="text" name="first_name" placeholder="First name" required>
                         <input type="text" name="last_name" placeholder="Last name" required>
@@ -313,6 +317,7 @@
                     </div>
                     <button type="submit">Send message</button>
                 </form>
+
             </div>
         </div>
     </div>
@@ -330,8 +335,7 @@
             <img src="img/logo.png" alt="Logo Lotus" class="logo">
         </div>
         <!-- <h1>Beauty Salon</h1> -->
-        <p>Est tortor egestas sed feugiat elementum. Viverra nulla amet a ultrices massa dui. Tortor est purus morbi vitae
-            arcu suspendisse amet.</p>
+        <p>Experience our exceptional hair services and visit us in Rehoboth for a transformation.</p>
         <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=61559077173775" class="social-icon"><img src="img/fb.png" alt="Facebook"></a>
             <!-- <a href="#" class="social-icon"><img src="img/twitter-icon.png" alt="Twitter"></a> -->
@@ -374,24 +378,7 @@
             }
 
         //------------------------------
-        document.getElementById('appointmentForm').addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                let formData = new FormData(this);
-
-                fetch('C:\wamp64\www\sendM\send_mail.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('responseMessage').innerHTML = data;
-                        document.getElementById('appointmentForm').reset();
-                    })
-                    .catch(error => {
-                        document.getElementById('responseMessage').innerHTML = "Erreur lors de l'envoi. Essayez encore.";
-                    });
-            });
+        
 
 
     </script>
